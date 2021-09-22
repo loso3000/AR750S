@@ -13,15 +13,12 @@ name: OpenWrt AR750S NOR Lienol
 
 on:
   repository_dispatch:
-  release:
-    types: published
-
-  push:
-    branches:
-      - main
-    paths:
-      - '.config.nor.lienol'
-
+  workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 #  schedule:
 #    - cron: 0 8 * * 5
 #  watch:
