@@ -3,7 +3,8 @@ mkdir -p /workdir/openwrt/package/lean
 
 # Add luci-app-ssr-plus
 cd /workdir/openwrt/package/lean
-git clone --depth=1 https://github.com/fw876/helloworld
+git clone https://github.com/kenzok8/openwrt-packages.git
+git clone https://github.com/kenzok8/small
 
 cd /workdir/openwrt
 cd /workdir/lede/package/lean
@@ -41,7 +42,6 @@ cd /workdir/openwrt/package/community
 git clone --depth=1 https://github.com/Lienol/openwrt-package
 
 # Add luci-app-passwall
-git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall
 
 # Add gotop
 #svn co https://github.com/project-openwrt/openwrt/trunk/package/ctcgfw/gotop
