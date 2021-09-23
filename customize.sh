@@ -1,6 +1,5 @@
 #!/bin/bash
 # Modify default Hostname
-cd /workdir/openwrt
 sed -i "s/hostname='OpenWrt'/hostname='AR750S'/g" package/base-files/files/bin/config_generate
 
 # Modify default IP
