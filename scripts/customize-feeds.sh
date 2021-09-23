@@ -3,8 +3,7 @@ mkdir -p /workdir/openwrt/package/lean
 
 # Add luci-app-ssr-plus
 cd /workdir/openwrt/package/lean
-git clone https://github.com/kenzok8/openwrt-packages.git
-git clone https://github.com/kenzok8/small
+ git clone -b 19.07 https://github.com/kenzok8/small-package
 
 cd /workdir/openwrt
 cd /workdir/lede/package/lean
