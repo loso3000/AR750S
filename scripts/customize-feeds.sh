@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cd /workdir
 mkdir -p /workdir/openwrt/package/lean
 
