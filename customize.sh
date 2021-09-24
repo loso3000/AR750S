@@ -3,7 +3,7 @@
 sed -i "s/hostname='OpenWrt'/hostname='AR750S'/g" package/base-files/files/bin/config_generate
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.11.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generate
 
 # Modify Timezone
 sed -i "s/timezone='UTC'/timezone='CST-8'/g" package/base-files/files/bin/config_generate
@@ -16,6 +16,6 @@ sed -i 's/2.openwrt.pool.ntp.org/time.ustc.edu.cn/g' package/base-files/files/bi
 sed -i 's/3.openwrt.pool.ntp.org/pool.ntp.org/g' package/base-files/files/bin/config_generate
 
 # Add luci-app-ssr-plus
- git clone -b 19.07 https://github.com/kenzok8/small-package ./package/lean/small-package
-
+# git clone -b 19.07 https://github.com/kenzok8/small-package ./package/small-package
+git clone https://github.com/kenzok8/jell ./package/jell
 #sed -i 's/set wireless.default_radio\${devidx}.ssid=OpenWrt/set wireless.default_radio\${devidx}.ssid=AR750S/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
